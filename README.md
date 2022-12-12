@@ -1,3 +1,11 @@
+# Created an frontend using React
+
+# Performed all the basic validations for the form
+
+# Age criteria has been maintained
+
+# NOTE: Once you submit the form data is successfully stored into the database, you can check throught the db config which has given in index.js file
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
