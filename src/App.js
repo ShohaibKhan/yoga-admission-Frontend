@@ -24,7 +24,6 @@ function App() {
     e.preventDefault();
     setformerrors(validate(name,age,phno,email));
     setissubmit(true);
-    alert("Successfully Submitted!");
     axios.post("https://yoga-admission-api.onrender.com/api/post",{
         name,
         age,
@@ -50,6 +49,7 @@ function App() {
     console.log(formerrors);
     if (Object.keys(formerrors).length === 0 && issubmit){
       console.log(name,email,phno,age,gender,timing);
+      alert("Successfully Submitted!");
     }
 
   },[formerrors])
