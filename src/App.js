@@ -145,7 +145,8 @@ function App() {
         <p className="five-to-six"><input type="radio" name="session" id="56" value="5-6" checked={timing == "5-6"} onChange={e=>settiming(e.target.value)} ></input>5 to 6  PM</p>
         </p>
 
-      <p className="btn"><input type="submit" value="Submit" ></input></p>      
+      <p className="btn"><input type="submit" value="Submit" ></input></p>
+      <p>pay anytime during any day of the month !</p>      
     </form>
 </div>
   );
