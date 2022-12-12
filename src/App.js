@@ -15,7 +15,7 @@ function App() {
   const [timing,settiming] = useState('');
   const [formerrors,setformerrors] = useState({});
   const [issubmit,setissubmit]=useState(false);
-  const [disable,setdisable]=useState(0);
+  
 
   // below handlesubmit function is used to submit the form if all validations are satisfied
 
@@ -24,7 +24,7 @@ function App() {
     e.preventDefault();
     setformerrors(validate(name,age,phno,email));
     setissubmit(true);
-    setdisable(true);
+    alert("Successfully Submitted!");
     axios.post("https://yoga-admission-api.onrender.com/api/post",{
         name,
         age,
@@ -145,7 +145,7 @@ function App() {
         <p className="five-to-six"><input type="radio" name="session" id="56" value="5-6" checked={timing == "5-6"} onChange={e=>settiming(e.target.value)} ></input>5 to 6  PM</p>
         </p>
 
-      <p className="btn"><input type="submit" value="Submit" disabled={disable}></input></p>      
+      <p className="btn"><input type="submit" value="Submit" ></input></p>      
     </form>
 </div>
   );
