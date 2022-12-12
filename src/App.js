@@ -23,7 +23,7 @@ function App() {
     e.preventDefault();
     setformerrors(validate(name,age,phno,email));
     setissubmit(true);
-    axios.post("http://localhost:5000/api/post",{
+    axios.post("https://yoga-admission-api.onrender.com/api/post",{
         name,
         age,
         gender,
